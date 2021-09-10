@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ReillyMix"
+    }
+  },
+  "defaultProject": "ReillyMix",
+  "cli": {
+    "analytics": "e6504faa-5845-4a4c-8b4b-fbbc7cb5f30d"
+  }
 }
