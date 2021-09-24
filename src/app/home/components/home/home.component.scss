@@ -1,0 +1,121 @@
+.responsive {
+    width: 100%;
+    height: auto;
+  }
+
+  .background{
+      background-image: url("../../../../assets/images/buttonGift.jpg");
+      width: 100%;
+      height: auto;
+  }
+
+  .button{
+    width: 300px; 
+    height: 80px; 
+    border: 3px solid rgb(255, 255, 255);
+    background: #0000004d;
+    border-radius: 40px;
+    font-size: xx-large;
+    color: rgb(255, 255, 255);
+  }
+
+  .buttonInfo{
+    width: 300px; 
+    height: 80px; 
+    border: 3px solid rgb(255, 255, 255);
+    background: #0000004d;
+    border-radius: 40px;
+    font-size: xx-large;
+    color: rgb(255, 255, 255);
+  }
+
+  .buttonExtras{
+    width: 100px; 
+    height: 40px; 
+    border: 3px solid rgb(255, 255, 255);
+    background: #0000004d;
+    border-radius: 40px;
+    font-size: small;
+    color: rgb(255, 255, 255);
+  }
+
+  .buttonSubmit{
+    width: 300px; 
+    height: 80px; 
+   border: 1px solid #c4c4c42a;
+    background: #c4c4c42a;
+    border-radius: 20px;
+    font-size: xx-large;
+    color: #6EFF3C;
+  }
+
+  .buttonWeekly{
+    width: 300px; 
+    height: 80px; 
+    border: 3px solid rgb(255, 255, 255);
+    background: #0000004d;
+    border-radius: 20px;
+    font-size: xx-large;
+    color: #6EFF3C;
+ 
+  }
+
+  .center{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+  }
+
+  .margin{
+      margin: 70px;
+  }
+
+  .color{
+    color: white;
+    font-size: 30px;
+  }
+
+  .divider{
+    border-top: 2px solid #3ffb00;
+    width: 150px;
+  }
+
+  .styleTitle{
+    color:#FFFFFF;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    font-size: xx-large;
+  }
+
+  .styleSubtitle{
+    color:#FFFFFF;
+    margin: auto;
+    
+    padding: 10px;
+    text-align: left;
+  }
+
+  .priceExtras{
+    // border: 1px solid rgb(255, 255, 255);
+    width: 50px;
+   font-size: 20px;
+    margin-left: 5px;
+  ///  background: #856800;
+    align-items: center;
+    text-align-last: center;
+  }
+
+  .cardColor{
+    background-color: #2b313f;
+   
+  }
+
+  mat-grid-tile {
+    background: #0000004d;
+  }
+
+  .zoom{
+    width: 70%;
+  }
