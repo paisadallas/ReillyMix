@@ -1,0 +1,16 @@
+<p class="center">Login</p>
+
+
+
+
+<p class="center">
+    <input matInput class="style" placeholder="*Email" type="email" [formControl]="userFiel">
+    </p>
+  <p class="center">
+    <input matInput class="style" placeholder="*Password" type="password" [formControl]="passwordFiel">
+    </p>
+    <div class="center">
+        <button
+        (click)="sendData()"
+        class="buttonSubmit"> Sing in</button>
+    </div>

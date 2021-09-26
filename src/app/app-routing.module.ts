@@ -5,11 +5,20 @@ import {ScreenComponent} from "./screen/screen.component";
 const routes: Routes = [
 
   //Production
-  {
-    path: '',
-    loadChildren: () => import('./home/home.module').then(m =>m.HomeModule)
-  },
+  // {
+  //   path: '',
+  //   loadChildren: () => import('./home/home.module').then(m =>m.HomeModule)
+  // },
 
+  // {
+  //   path:'',
+  //   loadChildren: () => import('./login/login.module').then(m => m.LoginModule)
+  // },
+
+  {
+    path:'',
+    loadChildren: () => import('./night/night.module').then(m => m.NightModule)
+  },
   //Screem
 //   {path:'',
 //   component: ScreenComponent,
