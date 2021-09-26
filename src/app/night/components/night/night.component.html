@@ -1,9 +1,6 @@
 
 <div class="position">
-     <carousel
-     
-
-     
+     <carousel     
     [arrows]="false"
      [autoplay]="true"
     [autoplayInterval]="2000"
@@ -28,18 +25,9 @@
 </div>
 
 <p>Night Clubs</p>
-<mat-accordion >
-    <mat-expansion-panel (opened)="panelOpenState = true"
-                         (closed)="panelOpenState = false"
-                         >
-      <mat-expansion-panel-header >
-        <mat-panel-title>
-          Self aware panel
-        </mat-panel-title>
-        <mat-panel-description >
-          Currently I am {{panelOpenState ? 'open' : 'closed'}}
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-      <p>I'm visible because I am open</p>
-    </mat-expansion-panel>
-  </mat-accordion>
+
+<app-days></app-days>
+
+
+
+
