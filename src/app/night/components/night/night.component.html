@@ -27,8 +27,11 @@
 <p class="styleTitle">Night Clubs</p>
 <br>
 <br>
-<app-days [data]="data"></app-days>
-<app-days [data]="data"></app-days>
+
+<div *ngFor="let dataDiscos of data">
+    <app-days [data]="dataDiscos"></app-days>
+</div>
+
 
 
 
