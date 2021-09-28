@@ -1,10 +1,20 @@
-.border_style{
-    border-bottom: 1px solid;
-   border-color: rgb(32, 246, 3);       
-}
+
 
 .button_style{
     background: rgba(255, 99, 71, 0);
+    border-style: unset;
+
+}
+
+.text_day_style{
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.image_style{
+    
+    width: 50%;
+    height: 20%;
 }
 
 .day_style{
@@ -15,3 +25,9 @@
     position: absolute;
     left: 5px;
 }
+
+.divider{
+    border-top: 2px solid #3ffb00;
+    width: 150px;
+  }
+

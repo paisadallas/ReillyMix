@@ -1,0 +1,23 @@
+.image_style{
+    width: 100%;
+}
+
+.button{
+    width: 300px; 
+    height: 80px; 
+    border: 3px solid rgb(255, 255, 255);
+    background: #0000004d;
+    border-radius: 40px;
+    font-size: xx-large;
+    color: rgb(0, 245, 20);
+  }
+
+  .center{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+  }
+
+  .margin{
+    margin: 20px;
+}

@@ -1,22 +1,18 @@
-<div class="border_style">
 
-<mat-grid-list cols="4" rowHeight="3:1" class="border">
-    <mat-grid-tile
-    [colspan]="3"
-   >
-    <div class="day_style">
-        <p>Thursday</p>
+    <div class="row">
+        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+            <p class="text_day_style">{{data.day}}</p>
+        </div>
+        <div class="col-xs-2 col-sm-2 col-md-2
+        col-lg-2">
+            <button (click)="one()" class="button_style">
+                <img *ngIf="!discoOne" class="image_style" src="../../../../assets/images/flecha.png">
+                <img *ngIf="discoOne"  class="image_style" src="../../../../assets/images/flechaUp.png">
+            </button>
+        </div>
+
     </div>
-    </mat-grid-tile>
-    <mat-grid-tile
-    [colspan]="1">
-        <button class="button_style">
-            <img src="../../../../assets/images/flecha.png">
-        </button>
-    </mat-grid-tile>
-    <mat-grid-tile
-    [colspan]="4">
-        <p>Hola mundo</p>
-    </mat-grid-tile>
-</mat-grid-list>
-</div>
+
+    <app-disco [data]="data" *ngIf = "discoOne"></app-disco>
+
+<hr class="divider">
