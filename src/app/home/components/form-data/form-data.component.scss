@@ -13,6 +13,12 @@
   text-align: center;
 }
 
+.centerSubmit{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
 .style{
   background-color: #000;
   color:white;
@@ -23,5 +29,15 @@
   font-size: 25px;
   border: 1px solid white;
 
+}
+
+.buttonSubmit{
+  width: 300px; 
+  height: 80px; 
+ border: 1px solid #c4c4c42a;
+  background: #c4c4c42a;
+  border-radius: 20px;
+  font-size: xx-large;
+  color: #6EFF3C;
 }
 

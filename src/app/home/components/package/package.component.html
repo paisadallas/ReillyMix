@@ -5,14 +5,12 @@
     <div class="border_style col-xs-10 col-sm-10 col-md-10 col-lg-10">
         <p class="title_style">{{data.title}}</p>
 
-        <img class="image_style" src="../../../../assets/images/packageSample.jpg">
+        <img class="image_style" src={{data.image}}>
 
 
 
             <!-- <app-services-package [data]="services.name"></app-services-package> -->
-            <div *ngFor ="let services of data.services">
-                
-                
+            <div *ngFor ="let services of data.services">                       
                 <app-services-package [data]="services.name"></app-services-package>
             </div>
             
@@ -20,6 +18,12 @@
 
 
         <hr class="divider">
+
+        <div *ngFor ="let servicesEs of data.servicesEs">
+                
+                
+            <app-services-package [data]="servicesEs.name"></app-services-package>
+        </div>
 
       
             <!-- <app-services-package [data]="data"></app-services-package> -->

@@ -15,10 +15,10 @@ const routes: Routes = [
   //   loadChildren: () => import('./login/login.module').then(m => m.LoginModule)
   // },
 
-  // {
-  //   path:'',
-  //   loadChildren: () => import('./night/night.module').then(m => m.NightModule)
-  // },
+  {
+    path:'nightClubs',
+    loadChildren: () => import('./night/night.module').then(m => m.NightModule)
+  },
   //Screem
 //   {path:'',
 //   component: ScreenComponent,

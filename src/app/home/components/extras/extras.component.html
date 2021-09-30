@@ -1,0 +1,19 @@
+<div class="row">
+    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+
+    <div class="border_style col-xs-10 col-sm-10 col-md-10 col-lg-10">
+
+        <p class="title_style">{{data.title}}</p>
+        <img class="image_style" src={{data.image}}>
+        <div *ngFor = "let dataServices of data.services">
+
+            <app-services-extras 
+            [dataService]="dataServices.name"
+            [dataPrice]="dataServices.price"
+            ></app-services-extras>
+        </div>
+    </div>
+
+    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+
+</div>

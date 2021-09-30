@@ -8,14 +8,12 @@
 <img src="../../../../assets/images/logo.webp" alt="Nature" class="responsive">
 <div class="background">
    <div class="center">       
-       <button (click)="myClick()" class="center button margin">Free Giveaways</button>
+       <button (click)="freeAwaysFuntion()" class="center button margin">Free Giveaways</button>
    </div>
 </div>
-<app-form-data></app-form-data>
+<app-form-data *ngIf = "freeAways"></app-form-data>
 
-<div class="center">
-    <button class="buttonSubmit"> Submit</button>
-</div>
+
 
 <img src="../../../../assets/images/albumSample.jpg" alt="Nature" class="responsive">
 
@@ -29,23 +27,37 @@
 <img src="../../../../assets/images/nightClubSample.jpg" alt="Nature" class="responsive">
 <div class="center">
 
-    <button (click)="myClick()" class="center buttonInfo margin">Info</button>
+    <button (click)="myClick()" class="center buttonInfo margin" routerLink= "/nightClubs">Info</button>
 </div>
 
 <hr class="divider">
 <h1 class="styleTitle"> Social Event</h1>
 
+<!--PACKAGES-->
 
-<app-package></app-package>
+<div *ngFor = "let data of dataPackage">
 
+    <app-package [data]="data"></app-package>
+</div>
 
+<div class="center">
 
+    <button (click)="extrasFuntion()" class="center buttonInfo margin">Extras</button>
+</div>
+
+<!--EXTRAS-->
+<div *ngIf="extras">
+    <div *ngFor = "let data of dataExtras">
+
+        <app-extras [data]="data"></app-extras>
+    </div>
+</div>
 
 
 
 <!--Dancing on the clows-->
 
-<mat-card class="cardColor">
+<!-- <mat-card class="cardColor">
 
 
 <h1 class="styleSubtitle"> Dancing on the clows</h1>
@@ -86,8 +98,8 @@
       
 </div>
 </mat-card>
-<!--Led Robots-->
-<br>
+<!Led Robots-->
+<!-- <br>
 <mat-card class="cardColor">
 <h1 class="styleSubtitle"> Dancing led robots</h1>
 <div >
@@ -126,9 +138,9 @@
     <p class="priceExtras">$600</p>      
 </div>
 </mat-card>
-<br>
+<br> -->
 <!--Pyrotechnics and waltz in clouds-->
-
+<!-- 
 <mat-card class="cardColor">
 <h1 class="styleSubtitle"> Pirotechnics & Waltz in Clouds</h1>
 <div >
@@ -148,9 +160,9 @@
     <p class="priceExtras">$500</p>      
 </div>
 </mat-card>
-<br>
+<br> -->
 <!--Pyrotechnics-->
-<mat-card class="cardColor">
+<!-- <mat-card class="cardColor">
 <h1 class="styleSubtitle"> Pirotechnics</h1>
 <div >
     <video controls width="100%" height="auto" #myVideo poster="../../../../assets/images/missing.jpg" preload="none">
@@ -169,12 +181,12 @@
     <p class="priceExtras">$350</p>      
 </div>
 </mat-card>
-<br>
+<br> -->
 
 
 
 <!--PothoBook-->
-<mat-card class="cardColor">
+<!-- <mat-card class="cardColor">
 <h1 class="styleSubtitle"> Photo Book</h1>
 <div >
     <video controls width="100%" height="auto" #myVideo poster="../../../../assets/images/missing.jpg" preload="none">
@@ -192,11 +204,11 @@
 
     <p class="priceExtras">$700</p>      
 </div>
-</mat-card>
+</mat-card> --> -->
 
 <!-- DJ LIVE-->
 
-<h1 class="styleTitle"> Night Clubs</h1>
+<!-- <h1 class="styleTitle"> Night Clubs</h1> -->
 <div >
     <video controls width="100%" height="auto" #myVideo poster="../../../../assets/images/missing.jpg" preload="none">
         <source src="../../../../assets/video/Photobooth_Service.mp4" type="video/mp4">

@@ -6,14 +6,17 @@ import { HomeRoutingModule } from './home-routing.module';
 import {MaterialModule} from '../material/material.module';
 import { PackageComponent } from './components/package/package.component';
 import { ServicesPackageComponent } from './components/services-package/services-package.component';
-
+import { ExtrasComponent } from './components/extras/extras.component';
+import { RouterModule } from '@angular/router';
+import { ServicesExtrasComponent } from './components/services-extras/services-extras.component';
 
 @NgModule({
-  declarations: [FormDataComponent, HomeComponent, PackageComponent, ServicesPackageComponent],
+  declarations: [FormDataComponent, HomeComponent, PackageComponent, ServicesPackageComponent, ExtrasComponent, ServicesExtrasComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,
-    MaterialModule
+    MaterialModule,
+    RouterModule
   ]
 })
 export class HomeModule { }
