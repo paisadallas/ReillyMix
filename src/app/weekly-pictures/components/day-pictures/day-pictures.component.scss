@@ -1,0 +1,37 @@
+.image_principal{
+    width: 100%;
+    height: auto;
+}
+
+.image_mini{
+    width: 100%;
+    height: auto;
+    object-fit: scale-down;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .container {
+   
+ 
+    color: white;
+  }
+
+.transparencia{
+    opacity: 0.5;
+    
+}
+
+.time{
+    margin: 10px;
+    font-size: 20px;
+    
+}
+
+
+

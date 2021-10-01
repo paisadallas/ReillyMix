@@ -9,7 +9,7 @@ import { ScreenComponent } from './screen/screen.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ScreenComponent
+    ScreenComponent,
   ],
   imports: [
     BrowserModule,

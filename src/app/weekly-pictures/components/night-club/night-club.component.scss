@@ -1,0 +1,24 @@
+.button{
+    width: 300px; 
+    height: 80px; 
+    border: 3px solid rgb(255, 255, 255);
+    background: #0000004d;
+    border-radius: 40px;
+    font-size: xx-large;
+    color: rgb(255, 255, 255);
+    margin: 20px;
+  }
+
+  .center{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+  }
+
+
+.background{
+    // background-image: url("../../../../assets/images/clubSample.jpg");
+    width: 100%;
+     height: auto;
+}
+

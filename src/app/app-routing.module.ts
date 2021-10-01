@@ -15,11 +15,15 @@ const routes: Routes = [
   //   loadChildren: () => import('./login/login.module').then(m => m.LoginModule)
   // },
 
+  //Screem
   {
     path:'nightClubs',
     loadChildren: () => import('./night/night.module').then(m => m.NightModule)
   },
-  //Screem
+  {
+    path:'weeklyPictures',
+    loadChildren: () => import('./weekly-pictures/weekly-pictures.module').then(m => m.WeeklyPicturesModule)
+  },
 //   {path:'',
 //   component: ScreenComponent,
 // }
