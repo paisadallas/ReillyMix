@@ -5,12 +5,18 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './day-pictures.component.html',
   styleUrls: ['./day-pictures.component.scss']
 })
-export class DayPicturesComponent implements OnInit {
 
+
+export class DayPicturesComponent implements OnInit {
+  
+
+  lightblue="#00000"
   constructor() { }
 
  public size:80;
   ngOnInit(): void {
   }
+
+
 
 }
