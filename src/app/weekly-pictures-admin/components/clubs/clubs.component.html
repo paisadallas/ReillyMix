@@ -1,0 +1,32 @@
+<div class="background">
+    
+    <div class="center">
+        
+        <button   class="center button margin" (click)="openClub()">Night Club</button>
+    </div>
+    
+</div>
+
+<div class="center background_style" *ngIf="club">
+
+<mat-form-field class="background_date" appearance="fill">
+    <mat-label>Disco date</mat-label>
+    <input matInput [matDatepicker]="picker" (dateInput)="getDate('input', $event)">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+
+</div>
+
+<br>
+
+<app-upload-pictures *ngIf="club"></app-upload-pictures>
+
+<div class="center">
+    <button class="button_style margin_galery" *ngIf="club">Galery</button>
+</div>
+
+
+<div *ngFor="let images of galery">
+    <app-card-image  [data]="images"></app-card-image>
+</div>

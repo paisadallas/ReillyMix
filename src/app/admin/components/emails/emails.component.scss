@@ -1,0 +1,42 @@
+.title{
+    text-align: center;
+    color: #00FFF0;
+    font-size:x-large;
+    margin: 30px;
+    
+}
+.subtitle{
+    text-align: center;
+    color: #00FFF0;
+    font-size:large;
+    margin: 20px;
+    
+}
+
+.button_style{
+    width: 200px; 
+    height: 60px; 
+    border: 3px solid rgb(255, 255, 255);
+    background: #0000004d;
+    border-radius: 20px;
+    font-size: x-large;
+    color: #00FFF0;
+ 
+  }
+
+  .text_email{
+    text-align: center;    
+    font-size:large;
+    margin: 20px;
+  }
+  .text_date{
+    text-align: center;    
+    font-size:small;
+    margin: 20px;
+  }
+
+  .center{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+  }

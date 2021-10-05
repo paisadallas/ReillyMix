@@ -7,7 +7,8 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatCardModule} from '@angular/material/card';
 import {MatInputModule} from '@angular/material/input';
 import {MatExpansionModule} from '@angular/material/expansion';
-
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatNativeDateModule} from '@angular/material/core';
 @NgModule({
   declarations: [],
   imports: [
@@ -18,7 +19,10 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatDividerModule,
     MatCardModule,
     MatInputModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatDatepickerModule,
+    MatNativeDateModule
+    
   ],
   exports:[
     MatGridListModule,
@@ -27,7 +31,9 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatDividerModule,
     MatCardModule,
     MatInputModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ]
 })
 export class MaterialModule { }

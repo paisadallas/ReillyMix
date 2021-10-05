@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "reillymixent"
+  },
+  "targets": {
+    "reillymixent": {
+      "hosting": {
+        "ReillyMix": [
+          "reillymixent"
+        ]
+      }
+    }
   }
 }
