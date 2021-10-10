@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import {DataPacket} from '../../dataPacket.model'
+import {DataPacket} from '../../../core/model/dataPacket.model'
 
 @Component({
   selector: 'app-services-package',

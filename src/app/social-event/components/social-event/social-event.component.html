@@ -1,1 +1,5 @@
-<p>social-event works!</p>
+<app-header></app-header>
+     <div *ngFor="let data of dataPackage">
+        
+        <app-package [data]="data"></app-package>
+     </div>

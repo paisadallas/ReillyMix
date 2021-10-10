@@ -15,7 +15,8 @@ import {MaterialModule} from './../material/material.module';
   ],
   exports:[
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    
   ]
 })
 export class SharedModule { }

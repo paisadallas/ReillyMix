@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import {DataPacket} from '../../dataPacket.model';
+
 @Component({
   selector: 'app-package',
   templateUrl: './package.component.html',
