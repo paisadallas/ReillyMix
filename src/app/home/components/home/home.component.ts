@@ -11,6 +11,8 @@ export class HomeComponent implements OnInit {
 
   freeAways:boolean = false;
   extras:boolean = false;
+  dataEvents:boolean = false;
+  dataDJ: boolean = false;
   dataPackage;
   dataExtras;
   constructor(
@@ -40,6 +42,14 @@ export class HomeComponent implements OnInit {
 
   extrasFuntion(){
     this.extras = !this.extras;
+  }
+
+  openEvents(){
+    this.dataEvents = ! this.dataEvents;
+  }
+
+  openDJ(){
+    this.dataDJ = !this.dataDJ;
   }
 
    

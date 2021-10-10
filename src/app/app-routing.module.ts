@@ -9,11 +9,6 @@ const routes: Routes = [
     path: '',
     loadChildren: () => import('./home/home.module').then(m =>m.HomeModule)
   },
-
-  {
-    path:'',
-    loadChildren: () => import('./login/login.module').then(m => m.LoginModule)
-  },
  
   {
     path:'nightClubs',
@@ -30,8 +25,17 @@ const routes: Routes = [
     loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule)
   },
   {
-    path: 'admin/discos',
+    path: 'discos',
     loadChildren: () => import('./weekly-pictures-admin/weerkly-admin.module').then(m => m.WeerklyAdminModule)
+  },
+  {
+    path:'login',
+    loadChildren: () => import('./login/login.module').then(m => m.LoginModule)
+  },
+  {
+    path:'social-events',
+    loadChildren: () => import('./social-event/social-event.module').then(m => m.SocialEventModule)
+    
   }
 
 

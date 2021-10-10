@@ -6,9 +6,10 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
 import {MaterialModule} from '../material/material.module';
 import { DaysComponent } from './components/days/days.component';
 import { DiscoComponent } from './components/disco/disco.component';
+import { CarouselNightComponent } from './components/carousel-night/carousel-night.component';
 
 @NgModule({
-  declarations: [NightComponent, DaysComponent, DiscoComponent],
+  declarations: [NightComponent, DaysComponent, DiscoComponent, CarouselNightComponent],
   imports: [
     CommonModule,
     NightRoutingModule,

@@ -1,5 +1,27 @@
 <p class="title">Admin</p>
-<app-emails></app-emails>
+<div class="center"> 
+    <button (click)="showBanner()" class="button_style">Banner Home</button>
+</div>
+
+<app-upload-picture *ngIf="bannerShow"></app-upload-picture>
 <hr class="divider">
-<app-giveaways></app-giveaways>
+<div class="center"> 
+    <button (click)="showEmail()" class="button_style">Email</button>
+</div>
+<app-emails *ngIf="emailShow"></app-emails>
+<hr class="divider">
+<div class="center">
+    <button class="button_style">Live</button>
+</div>
+<hr class="divider">
+
+<div class="center">
+    <button (click)="showGiveaways()" class="button_style">Free Giveaways</button>
+</div>
+<app-giveaways *ngIf="giveawaysShow"></app-giveaways>
+<hr class="divider">
+<div class="center">
+    <button (click)='showNight()' class="button_style">Night Clubs</button>
+</div>
+
 <app-night-clubs></app-night-clubs>

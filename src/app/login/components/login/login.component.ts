@@ -22,11 +22,22 @@ export class LoginComponent implements OnInit {
   let dataForm = {
     userFiel: this.userFiel.value,
     passwordFiel: this.passwordFiel.value
+
+
+
+
   }
 console.log(dataForm);
 
   }
 
+  checkPassword(){
+        if(this.passwordFiel.value == "reilly"){
+        //  window.open("http://localhost:4200/admin","_self");
+          window.open('https://reillymixent.web.app//admin',"_self");
+      
+    }
+  }
 
 
 

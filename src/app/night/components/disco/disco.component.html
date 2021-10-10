@@ -1,5 +1,48 @@
 <div >
-    <img class="image_style" src={{data.banner}}>
+
+    <div >
+      <carousel
+        [cellWidth]="'100%'"
+        [cellsToShow]="1"
+        [arrows]="true"
+        [autoplay]="false"
+        [autoplayInterval]="1000"
+        [transitionDuration]="500"
+        [loop]="true"        
+      >
+        <div class="carousel-cell" *ngFor="let dataBanner of data.banner">
+          <img  [src]="dataBanner">
+        </div>
+      </carousel>
+    </div>
+
+    <!-- <carousel     
+     
+     [cellWidth]="100"   
+    [cellsToShow]="1"
+    [arrows]="true"
+     [autoplay]="false"
+    [autoplayInterval]="1000"
+    [transitionDuration]="500"
+     [loop]="true">>
+            <div class="carousel-cell">
+                <img class="image_carousel" src="../../../../assets/images/bannerSample.jpg">
+            </div>    
+            <div class="carousel-cell">
+                <img src="../../../../assets/images/bannerSample.jpg">
+            </div>    
+            <div class="carousel-cell">
+                <img src="../../../../assets/images/bannerSample.jpg">
+            </div>    
+            <div class="carousel-cell">
+                <img src="../../../../assets/images/bannerSample.jpg">
+            </div>    
+            <div class="carousel-cell">
+                <img src="../../../../assets/images/bannerSample.jpg">
+            </div>    
+    </carousel> -->
+
+<br>
 
     <video controls width="100%" height="auto" #myVideo poster={{data.preholder}} preload="none">
         <source src={{data.video}} type="video/mp4">
@@ -16,4 +59,5 @@
     <img class="image_style" src={{data.map}}>
 
     <img class="image_style" src={{data.plano}}>
+
 </div>

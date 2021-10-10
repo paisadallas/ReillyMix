@@ -14,14 +14,14 @@ export class ClubsComponent implements OnInit {
 
 
 galery: ImageModel[] =[];
-
+galeryShow:boolean = false;
 
   constructor(
     private route:ActivatedRoute,
     private dataGalery: GaleryService
   ) { }
 
-  club:boolean = true;
+  club:boolean = false;
 
   ngOnInit(): void {
  
@@ -39,6 +39,10 @@ galery: ImageModel[] =[];
 
   openClub(){
     this.club = ! this.club;
+  }
+
+  openGalery(){
+    this.galeryShow = !this.galeryShow;
   }
 
 }

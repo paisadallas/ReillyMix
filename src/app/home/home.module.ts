@@ -9,6 +9,7 @@ import { ServicesPackageComponent } from './components/services-package/services
 import { ExtrasComponent } from './components/extras/extras.component';
 import { RouterModule } from '@angular/router';
 import { ServicesExtrasComponent } from './components/services-extras/services-extras.component';
+import {SharedModule} from '../shared/shared.module';
 
 @NgModule({
   declarations: [FormDataComponent, HomeComponent, PackageComponent, ServicesPackageComponent, ExtrasComponent, ServicesExtrasComponent],
@@ -16,7 +17,8 @@ import { ServicesExtrasComponent } from './components/services-extras/services-e
     CommonModule,
     HomeRoutingModule,
     MaterialModule,
-    RouterModule
+    RouterModule,
+    SharedModule
   ]
 })
 export class HomeModule { }

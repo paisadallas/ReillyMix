@@ -1,6 +1,6 @@
 export interface DataNight {
     day: string;
-    banner: string;
+    banner: string [];
     video: string;
     preholder:string,
     text: string;

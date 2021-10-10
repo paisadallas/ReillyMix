@@ -2,7 +2,7 @@
     
     <div class="center">
         
-        <button   class="center button margin" (click)="openClub()">Night Club</button>
+        <button   class="center button margin" (click)="openClub()">Club Name</button>
     </div>
     
 </div>
@@ -23,10 +23,13 @@
 <app-upload-pictures *ngIf="club"></app-upload-pictures>
 
 <div class="center">
-    <button class="button_style margin_galery" *ngIf="club">Galery</button>
+    <button (click)="openGalery()" class="button_style margin_galery" *ngIf="club">Galery</button>
 </div>
 
+<div *ngIf="galeryShow">
 
-<div *ngFor="let images of galery">
-    <app-card-image  [data]="images"></app-card-image>
+    
+    <div *ngFor="let images of galery">
+        <app-card-image  [data]="images"></app-card-image>
+    </div>
 </div>
