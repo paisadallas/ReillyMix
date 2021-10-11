@@ -3,15 +3,17 @@
     <div class="row">
         <div class="border_style col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
         <div class="border_style col-xs-10 col-sm-10 col-md-10 col-lg-10">
-            <img class="image" src="../../../../assets/images/uploadImage.png">
+            <img *ngIf="uploadImage" class="image" src="../../../../assets/images/uploadImage.png">
+            <img *ngIf="url$ | async as image" class=" image" [src]="image">
 
         </div>
         <div class="border_style col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
     </div>
 <div class="center">
     <button class="button_style">Upload</button>
+    <input (change)="uploadFile($event)" type="file">
 
-    <button class="button_style">Delete</button>
+    <button (click)='getId()' class="button_style">Delete</button>
 </div>
 
 <div class="center">

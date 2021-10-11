@@ -11,7 +11,7 @@ export class AdminComponent implements OnInit {
   bannerShow:boolean = false;
   emailShow:boolean = false;
   liveShow:boolean = false;
-  giveawaysShow:boolean = false;
+  giveawaysShow:boolean = true;
   nightShow:boolean = false;
 
   ngOnInit(): void {
@@ -34,8 +34,8 @@ export class AdminComponent implements OnInit {
   }
 
   showNight(){
-    // window.open('http://localhost:4200/discos', "_self");
-    window.open('https://reillymixent.web.app/discos', "_self");
+    window.open('http://localhost:4200/discos', "_self");
+   // window.open('https://reillymixent.web.app/discos', "_self");
   }
 
 }

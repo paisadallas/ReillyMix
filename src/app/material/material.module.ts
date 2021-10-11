@@ -9,6 +9,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material/core';
+import {ReactiveFormsModule} from '@angular/forms';
 @NgModule({
   declarations: [],
   imports: [
@@ -21,7 +22,8 @@ import {MatNativeDateModule} from '@angular/material/core';
     MatInputModule,
     MatExpansionModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    ReactiveFormsModule
     
   ],
   exports:[
@@ -33,7 +35,8 @@ import {MatNativeDateModule} from '@angular/material/core';
     MatInputModule,
     MatExpansionModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    ReactiveFormsModule
   ]
 })
 export class MaterialModule { }

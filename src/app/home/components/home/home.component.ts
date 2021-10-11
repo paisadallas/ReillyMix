@@ -40,9 +40,7 @@ export class HomeComponent implements OnInit {
     this.freeAways = !this.freeAways;
   }
 
-  extrasFuntion(){
-    this.extras = !this.extras;
-  }
+
 
   openEvents(){
     this.dataEvents = ! this.dataEvents;

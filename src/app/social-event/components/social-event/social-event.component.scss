@@ -1,0 +1,33 @@
+.responsive {
+    width: 100%;
+    height: auto;
+  }
+.buttonExtras{
+    width: 100px; 
+    height: 40px; 
+    border: 3px solid rgb(255, 255, 255);
+    background: #0000004d;
+    border-radius: 40px;
+    font-size: small;
+    color: rgb(255, 255, 255);
+  }
+  .center{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+  }
+
+  .margin{
+      margin: 70px;
+  }
+
+  .buttonInfo{
+    width: 300px; 
+    height: 80px; 
+    border: 3px solid rgb(255, 255, 255);
+    background: #0000004d;
+    border-radius: 40px;
+    font-size: xx-large;
+    color: rgb(255, 255, 255);
+    display: block;
+  }

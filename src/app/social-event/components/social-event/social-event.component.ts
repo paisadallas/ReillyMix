@@ -11,9 +11,11 @@ import {ExtrasService} from '../../../core/services/data/extras.service';
 export class SocialEventComponent implements OnInit {
 
   dataPackage;
-
+  dataExtras;
+  extras:boolean = false;
   constructor(
     private dataServices:PackagesService,
+    private dataExtrasServies: ExtrasService,
     private route:ActivatedRoute
   ) { }
 
@@ -21,6 +23,12 @@ export class SocialEventComponent implements OnInit {
     this.route.params.subscribe((params:Params) =>{
       this.dataPackage = this.dataServices.getPackage();
     })
+  
+    this.route.params.subscribe((param:Params)=>{
+      this.dataExtras = this.dataExtrasServies.getData();
+    })
   }
-
+  extrasFuntion(){
+    this.extras = !this.extras;
+  }
 }

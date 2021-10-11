@@ -7,6 +7,7 @@ import {MaterialModule} from '../material/material.module';
 import { DaysComponent } from './components/days/days.component';
 import { DiscoComponent } from './components/disco/disco.component';
 import { CarouselNightComponent } from './components/carousel-night/carousel-night.component';
+import {SharedModule} from '../shared/shared.module';
 
 @NgModule({
   declarations: [NightComponent, DaysComponent, DiscoComponent, CarouselNightComponent],
@@ -14,7 +15,8 @@ import { CarouselNightComponent } from './components/carousel-night/carousel-nig
     CommonModule,
     NightRoutingModule,
     IvyCarouselModule,
-    MaterialModule
+    MaterialModule,
+    SharedModule
   ]
 })
 export class NightModule { }

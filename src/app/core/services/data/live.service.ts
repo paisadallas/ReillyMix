@@ -1,21 +1,16 @@
 import { Injectable } from '@angular/core';
-import { ImageModel } from '../../model/imageModel.model';
 import {AngularFirestore} from '@angular/fire/firestore';
 
 @Injectable({
   providedIn: 'root'
 })
-export class GaleryService {
+export class LiveService {
 
   constructor(
     private fb:AngularFirestore
   ) { }
 
-
-
-  getGalery(){
-    //return this.data;
-   return this.fb.collection('galery').valueChanges();
-
+  getLive(){
+    return this.fb.collection('live').valueChanges();
   }
 }

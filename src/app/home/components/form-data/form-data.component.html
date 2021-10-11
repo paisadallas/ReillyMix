@@ -1,19 +1,51 @@
 
 <div>
-    <h1 class="mat-display-2 center" >Free Tikets</h1>
-    <img src="../../../../assets/images/bannerSample.jpg" class="responsive">
 
-    <p class="center">
-      <input class="style" placeholder="    *Name" type="text">
-      </p>
-    <p class="center">
-      <input class="style" placeholder="    *Email" type="email">
-      </p>
-    <p class="center">
-      <input class="style" placeholder="    *Phone" type="tel">
-      </p>
-</div>
+  <div *ngFor="let res of title">
+    <h1 class="mat-display-2 center" >{{res.event}}</h1>
+  </div>
 
-<div class="center centerSubmit">
-  <button class="buttonSubmit"> Submit</button>
-</div>
+    
+    <div >
+      <carousel
+        [cellWidth]="'100%'"
+        [cellsToShow]="1"
+        [arrows]="true"
+        [autoplay]="false"
+        [autoplayInterval]="1000"
+        [transitionDuration]="500"
+        [loop]="true"        
+      >
+        <div class="carousel-cell" *ngFor="let dataBanner of data">
+          <img  [src]="dataBanner.url">
+        </div>
+      </carousel>
+    </div>
+    <br>
+
+    <div *ngIf="!endData">
+
+      
+      <p class="center">
+        <input class="style" placeholder="    *Name" type="text" [formControl]="nameFiel">
+      </p>
+      <p class="center">
+        <input class="style" placeholder="    *Email" type="email" [formControl]="emailFiel">
+      </p>
+      <p class="center">
+        <input class="style" placeholder="    *Phone" type="tel" [formControl]="phoneFiel">
+      </p>
+    </div>
+    
+    <div *ngIf="!endData" class="center centerSubmit">
+      <button (click)="sendData()" class="buttonSubmit"> Submit</button>
+    </div>
+  
+    <div *ngIf="endData">
+      <h1 class="mat-display-2 center" >Thank you!</h1>
+    </div>
+
+
+  </div>
+
+

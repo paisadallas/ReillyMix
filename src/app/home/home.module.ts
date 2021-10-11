@@ -4,19 +4,20 @@ import { FormDataComponent } from './components/form-data/form-data.component';
 import { HomeComponent } from './components/home/home.component';
 import { HomeRoutingModule } from './home-routing.module';
 import {MaterialModule} from '../material/material.module';
-import { ExtrasComponent } from './components/extras/extras.component';
 import { RouterModule } from '@angular/router';
-import { ServicesExtrasComponent } from './components/services-extras/services-extras.component';
 import {SharedModule} from '../shared/shared.module';
-
+import {IvyCarouselModule} from 'angular-responsive-carousel';
+import { BannerComponent } from './components/banner/banner.component';
+import { VideoComponent } from './components/video/video.component';
 @NgModule({
-  declarations: [FormDataComponent, HomeComponent, ExtrasComponent, ServicesExtrasComponent],
+  declarations: [FormDataComponent, HomeComponent, BannerComponent, VideoComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,
     MaterialModule,
     RouterModule,
-    SharedModule
+    SharedModule,
+    IvyCarouselModule
   ]
 })
 export class HomeModule { }

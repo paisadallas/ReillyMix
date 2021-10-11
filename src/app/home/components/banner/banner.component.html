@@ -1,0 +1,16 @@
+<div>
+    <carousel
+      [cellWidth]="'100%'"
+      [cellsToShow]="1"
+      [arrows]="true"
+      [autoplay]="false"
+      [autoplayInterval]="1000"
+      [transitionDuration]="500"
+      [loop]="true"        
+    >
+      <div class="carousel-cell" *ngFor="let dataBanner of data">
+        <img  [src]="dataBanner.url">
+      </div>
+    </carousel>
+  </div>
+  <br>
