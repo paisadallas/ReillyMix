@@ -1,0 +1,27 @@
+<br>
+
+<div class="background center"> 
+
+  <img class="image_stream center" src="../../../../assets/images/stream.png" alt=""> 
+
+</div>
+<br>
+
+<div class="center">
+    <input [formControl]="newUrl">
+</div>
+<div class="center">
+    <p>URL Embed Video</p>
+</div>
+<div class="center" *ngIf="check">
+
+    <img class="check" src="../../../../assets/images/check.png"> 
+</div>
+
+<div class="center">
+    <button mat-raised-button (click)='upLive()'>Upload Stream</button>
+</div>
+
+<div class="background">
+   
+</div>

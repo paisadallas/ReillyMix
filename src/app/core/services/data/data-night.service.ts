@@ -1,11 +1,25 @@
 import { Injectable } from '@angular/core';
 import {DataNight} from '../../../night/dataNight.model';
+import {AngularFirestore} from '@angular/fire/firestore';
+import { FEB } from '@angular/material/core';
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataNightService {
+
+  constructor(private fb:AngularFirestore) { 
+
+  }
+
+  dataSample:DataNight[]
+
+ pasarDatos(){
+
+  return this.fb.collection('image_Wednesday', ref => ref.orderBy("id")).valueChanges();
+}
+
 
   discos: DataNight[]=[
     {
@@ -74,7 +88,14 @@ export class DataNightService {
 
   getDiscos(){
     return this.discos;
+    console.log(this.discos)
+   this.fb.collection('image_Wednesday').valueChanges().subscribe((data:DataNight[])=>{
+    this.dataSample[0] = data[0];
+   // return this.dataSample;
+    
+  })
+
   }
 
-  constructor() { }
+
 }

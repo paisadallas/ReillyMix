@@ -1,5 +1,11 @@
 <div>
 
+
+    <div *ngIf='giveaways' class="center">
+
+        <input class="style" placeholder=" Free Giveaways" type="text" [formControl]='title'>
+    </div>
+
     <div class="row">
         <div class="border_style col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
         <div class="border_style col-xs-10 col-sm-10 col-md-10 col-lg-10">
@@ -10,13 +16,16 @@
         <div class="border_style col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
     </div>
 <div class="center">
-    <button class="button_style">Upload</button>
-    <input (change)="uploadFile($event)" type="file">
+    
+        
+        <input *ngIf="banner" (change)="upBannerHomeFile($event)" type="file">
+        <button *ngIf="banner" (click)='deleteBannerHome()' class="button_style">Delete</button>
+    
+    
+         <input *ngIf="giveaways" (change)="upGiveawaysFile($event)" type="file">
+         <button *ngIf="giveaways" (click)='deleteGiveaways()' class="button_style">Delete</button>
 
-    <button (click)='getId()' class="button_style">Delete</button>
 </div>
 
-<div class="center">
-    <button class="button_post">Post</button>
-</div>
+
 </div>

@@ -13,12 +13,18 @@ export class NightComponent implements OnInit {
   constructor(    
     private dataNight: DataNightService,
     private route: ActivatedRoute,) { 
+
+      // this.dataNight.pasarDatos().subscribe((data:DataNight[])=>{
+      //   console.log(data)
+      //   this.data=data
+      // })
   }
 
   ngOnInit(): void {
+
     this.route.params.subscribe((params:Params) =>{
       this.data = this.dataNight.getDiscos();
+      console.log(this.data)
     })
   }
-
 }

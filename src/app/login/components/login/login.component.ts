@@ -93,7 +93,7 @@ console.log(dataForm);
 
   checkPassword(){
         if(this.passwordFiel.value == "reilly"){
-          window.open("http://localhost:4200/admin","_self");
+       //   window.open("http://localhost:4200/admin","_self");
         //  window.open('https://reillymixent.web.app//admin',"_self");
       
     }

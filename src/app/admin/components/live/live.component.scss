@@ -1,0 +1,19 @@
+.image_stream{
+    width: 100%;
+    height: auto;
+}
+
+.background{
+    background: whitesmoke;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+  }
+
+  .check{
+      width: 30px;
+      margin-bottom: 20px;
+  }

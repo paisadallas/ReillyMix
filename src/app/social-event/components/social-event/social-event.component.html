@@ -14,12 +14,38 @@
             <div class="center">
                <img src="../../../../assets/images/flecha.png">   
            </div>
-        <div *ngFor = "let data of dataExtras">
+        <div *ngFor="let data of dataExtras">
             
             <app-extras [data]="data"></app-extras>
         </div>
+
+        <div *ngFor='let data of dataBooth'>
+            <app-photo-book [data]='data'></app-photo-book>
+        </div>
     </div>
 
+    <h1 class="styleTitle"> DJ Services </h1>
+
+    <div>
+        <carousel
+        (events)="handleCarouselEvents($event)"
+          [cellWidth]="'100%'"
+          [cellsToShow]="1"
+          [arrows]="true"
+          [autoplay]="false"
+          [autoplayInterval]="1000"
+          [transitionDuration]="500"
+          [loop]="true"        
+        >
+          <div class="carousel-cell" *ngFor="let dataBannerDj of dj">
+            <img  [src]="dataBannerDj">
+          </div>
+        </carousel>
+      </div>
+    
+    <app-dj-services [data]='dataDj'></app-dj-services>
+
+    <button (click)="getDj()">New DJ</button>
     <app-footer></app-footer>
 
     <!-- <iframe width="100%" height="auto" src="https://www.youtube.com/embed/1ozGKlOzEVc" frameborder="0" allowfullscreen></iframe> -->

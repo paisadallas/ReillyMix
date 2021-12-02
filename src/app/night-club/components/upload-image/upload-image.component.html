@@ -1,0 +1,71 @@
+<div>
+
+  <div class="background center">
+
+    <h4>Day</h4>
+    <mat-form-field appearance="fill">
+        <mat-label>Night Club</mat-label>
+        <mat-select [(value)]="selectedValue">
+            <mat-option *ngFor="let food of foods" [value]="food.value">
+                {{food.viewValue}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>
+
+
+<!-- IMAGE -->
+
+<br>
+  <div class="row ">
+    <div class="border_style col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+    <div class="border_style col-xs-10 col-sm-10 col-md-10 col-lg-10">
+      <img *ngIf="uploadImage" class="image" src="../../../../assets/images/uploadImage.png">
+      <img *ngIf="url$ | async as image" class=" image" [src]="image">
+      
+    </div>
+    <div class="border_style col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+  </div>
+
+<div class="center">    
+        
+        <input (change)="up_image_DiscoFile($event)"  type="file">
+       <button  class="button_style">Delete</button>
+ 
+</div>
+
+<br>
+<br>
+<br>
+
+<!-- VIDEO -->
+
+<br>
+  <div class="row ">
+    <div class="border_style col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+    <div class="border_style col-xs-10 col-sm-10 col-md-10 col-lg-10">
+      <img *ngIf="uploadVideo" class="image" src="../../../../assets/images/uploadVideo.png">
+      
+
+      <video *ngIf="url_video$ | async as video" controls width="100%" height="auto" #myVideo  preload="none">
+        <source [src]="video" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+      </video>
+
+
+      
+    </div>
+    <div class="border_style col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+  </div>
+
+<div class="center">    
+        
+        <input (change)="up_video_DiscoFile($event)"  type="file">
+       <button  class="button_style">Delete</button>
+ 
+</div>
+
+
+
+</div>

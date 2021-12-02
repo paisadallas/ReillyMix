@@ -19,6 +19,7 @@ export class FormDataComponent implements OnInit {
   endData:boolean = false;
   data: Banner[];
   title: TitleFreeAways[];
+  title_string: string;
   constructor(
     private freeAways: FreeawaysService,
     private ft: AngularFirestore,
@@ -32,14 +33,29 @@ export class FormDataComponent implements OnInit {
 
     //TITLE FREEAWAYS
 
-    this.freeAways.getTitle().subscribe((res:TitleFreeAways[])=>{
-      console.log(res);
-      this.title = res;
+    // this.freeAways.getTitle().subscribe((res:TitleFreeAways[])=>{
+    //   console.log(res);
+    //   this.title = res;
+    // })
+
+    const read =  this.ft.collection('free_aways').valueChanges();
+
+     read.subscribe((data:TitleFreeAways[]) =>{
+      console.log(data)
+      this.title = data
+
+      this.title_string = this.title[0].event
+      console.log(this.title_string)
     })
     
    }
 
   ngOnInit(): void {
+    // this.freeAways.getTitle().subscribe((res:TitleFreeAways[])=>{
+    //   console.log(res.values);
+    //   this.title = res;
+    // })
+
   }
 
   async quickstart() {

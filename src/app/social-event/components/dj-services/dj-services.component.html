@@ -1,0 +1,30 @@
+    
+    <div class="row">
+        
+        <div class='col-xs-1 col-sm-1 col-md-1 col-lg-1'>
+            
+        </div>
+        
+        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+            
+                
+                <img class="center_image" src={{data.image}}>
+           
+        </div>
+        
+        <div class='col-xs-1 col-sm-1 col-md-1 col-lg-1'>
+            
+        </div>
+        
+    </div>   
+        
+        <h2 class="styleSubtitle">{{data.name}}</h2>    
+        
+        <p class="style_description">{{data.descripcion}}</p>    
+        
+        <video controls width="100%" height="auto" #myVideo  preload="none">
+            <source src={{data.video}} type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>   
+  

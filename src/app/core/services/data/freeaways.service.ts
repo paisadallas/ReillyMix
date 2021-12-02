@@ -10,10 +10,10 @@ export class FreeawaysService {
   ) { }
 
   getData(){
-    return this.fb.collection('bannerHome').valueChanges();
+    return this.fb.collection('free_giveaways').valueChanges();
   }
 
   getTitle(){
-    return this.fb.collection('free_aways').valueChanges();
+    return this.fb.collection('free_giveaways').valueChanges();
   }
 }

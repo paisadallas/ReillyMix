@@ -6,13 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./admin.component.scss']
 })
 export class AdminComponent implements OnInit {
-
+public  holamundo: string = "bannerHome";
   constructor() { }
   bannerShow:boolean = false;
   emailShow:boolean = false;
   liveShow:boolean = false;
-  giveawaysShow:boolean = true;
+  giveawaysShow:boolean = false;
   nightShow:boolean = false;
+
+
 
   ngOnInit(): void {
   }
@@ -26,7 +28,7 @@ export class AdminComponent implements OnInit {
   }
 
   showLive(){
-
+    this.liveShow = !this.liveShow;
   }
 
   showGiveaways(){
@@ -34,8 +36,10 @@ export class AdminComponent implements OnInit {
   }
 
   showNight(){
-    window.open('http://localhost:4200/discos', "_self");
+  //  window.open('http://localhost:4200/discos', "_self");
    // window.open('https://reillymixent.web.app/discos', "_self");
   }
+
+
 
 }

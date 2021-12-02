@@ -1,0 +1,34 @@
+<div class=" row">
+
+    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+
+    <div class="border_style col-xs-10 col-sm-10 col-md-10 col-lg-10">
+        
+        <p class="title_style">{{data.title}}</p>
+       
+
+            <!-- <app-services-package [data]="services.name"></app-services-package> -->
+            <div *ngFor="let services of data.services">                       
+                <app-photo-book-package [data]="services.name"></app-photo-book-package>
+            </div>
+            
+  
+
+
+        <hr class="divider">
+
+        <div *ngFor="let services of data.servicesEs">
+                
+                
+            <app-photo-book-package [data]="services.name"></app-photo-book-package>
+        </div>
+
+      
+            <!-- <app-services-package [data]="data"></app-services-package> -->
+
+      
+    </div>
+
+    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+
+</div>

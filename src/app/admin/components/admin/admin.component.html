@@ -1,27 +1,42 @@
 <p class="title">Admin</p>
+
+<!--Banner Home-->
+
 <div class="center"> 
     <button (click)="showBanner()" class="button_style">Banner Home</button>
 </div>
-
-<app-upload-picture *ngIf="bannerShow"></app-upload-picture>
+<app-upload-picture [banner]="true" *ngIf="bannerShow"></app-upload-picture>
 <hr class="divider">
+
+<!--Email-->
 <div class="center"> 
     <button (click)="showEmail()" class="button_style">Email</button>
 </div>
 <app-emails *ngIf="emailShow"></app-emails>
 <hr class="divider">
+
+<!--LIVE-->
+
 <div class="center">
-    <button class="button_style">Live</button>
+    <button (click)="showLive()" class="button_style">Live</button>
 </div>
+
+<app-live *ngIf="liveShow"></app-live>
+
 <hr class="divider">
+
+<!--Free Giveaways-->
 
 <div class="center">
     <button (click)="showGiveaways()" class="button_style">Free Giveaways</button>
 </div>
 <app-giveaways *ngIf="giveawaysShow"></app-giveaways>
+
 <hr class="divider">
+
+<!--Night Club-->
 <div class="center">
-    <button (click)='showNight()' class="button_style">Night Clubs</button>
+    <button routerLink="/nightClubs-admin" (click)='showNight()' class="button_style">Night Clubs</button>
 </div>
 
 <app-night-clubs></app-night-clubs>

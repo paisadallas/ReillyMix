@@ -8,9 +8,17 @@ import { NightClubsComponent } from './components/night-clubs/night-clubs.compon
 import { PaginatorComponent } from './components/paginator/paginator.component';
 import { UploadPictureComponent } from './components/upload-picture/upload-picture.component';
 import {MaterialModule} from './../material/material.module';
+import { LiveComponent } from './components/live/live.component';
 
 @NgModule({
-  declarations: [AdminComponent, EmailsComponent, GiveawaysComponent, NightClubsComponent, PaginatorComponent, UploadPictureComponent],
+  declarations: [AdminComponent,
+     EmailsComponent, 
+     GiveawaysComponent, 
+     NightClubsComponent, 
+     PaginatorComponent, 
+     UploadPictureComponent,
+    GiveawaysComponent,
+    LiveComponent],
   imports: [
     CommonModule,
     AdminRoutingModule,
